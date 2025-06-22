@@ -1,23 +1,29 @@
 import 'package:flutter/material.dart';
 
 class TocController extends ChangeNotifier {
-  final scrollController = ScrollController();
-  final List<GlobalKey> sectionKeys = List.generate(20, (_) => GlobalKey());
+  final ScrollController scrollController = ScrollController();
+
+  /// One key per “thing you’ll scroll to” (sections + sub-headings).
+  final List<GlobalKey> sectionKeys;
+
+  /// A matching list of levels: 1 = top section, 2 = sub-heading, 3 = sub-sub, etc.
+  final List<int> sectionLevels;
+
   int currentIndex = 0;
 
-  TocController() {
+  TocController({required this.sectionKeys, required this.sectionLevels})
+    : assert(sectionKeys.length == sectionLevels.length),
+      super() {
     scrollController.addListener(_onScroll);
   }
 
   void _onScroll() {
-    for (int i = 0; i < sectionKeys.length; i++) {
-      final context = sectionKeys[i].currentContext;
-      if (context != null) {
-        final box = context.findRenderObject() as RenderBox;
+    for (var i = 0; i < sectionKeys.length; i++) {
+      final ctx = sectionKeys[i].currentContext;
+      if (ctx != null) {
+        final box = ctx.findRenderObject() as RenderBox;
         final offset = box.localToGlobal(Offset.zero).dy;
-
         if (offset >= 0 && offset < 200) {
-          // Adjust this threshold to your preference
           if (currentIndex != i) {
             currentIndex = i;
             notifyListeners();
@@ -29,10 +35,10 @@ class TocController extends ChangeNotifier {
   }
 
   Future<void> scrollToIndex(int index) async {
-    final context = sectionKeys[index].currentContext;
-    if (context != null) {
+    final ctx = sectionKeys[index].currentContext;
+    if (ctx != null) {
       await Scrollable.ensureVisible(
-        context,
+        ctx,
         duration: const Duration(milliseconds: 300),
         curve: Curves.easeInOut,
       );

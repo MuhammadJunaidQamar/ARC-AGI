@@ -1,9 +1,13 @@
+// lib/pages/home_page.dart
+
 import 'package:flutter/material.dart';
 import '../controllers/toc_controller.dart';
 import '../utils/responsive_layout.dart';
 import '../widgets/content_panel.dart';
 import '../widgets/table_of_contents.dart';
 import '../widgets/github_link.dart';
+import '../data/sections_data.dart';
+import '../models/section_content.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,7 +21,22 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    _tocController = TocController();
+
+    // Build flat key & level lists
+    final keys = <GlobalKey>[];
+    final levels = <int>[];
+    for (var sec in sections) {
+      keys.add(GlobalKey());
+      levels.add(1);
+      for (var block in sec.contentBlocks) {
+        if (block is HeadingContent) {
+          keys.add(GlobalKey());
+          levels.add(block.level.clamp(2, 10));
+        }
+      }
+    }
+
+    _tocController = TocController(sectionKeys: keys, sectionLevels: levels);
   }
 
   @override
@@ -28,7 +47,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    const repoUrl = 'https://github.com/your-org/your-repo';
+    const repoUrl = 'https://github.com/MuhammadJunaidQamar/ARC-AGI';
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -38,29 +57,26 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: const Color.fromARGB(255, 32, 148, 243),
       ),
       body: ResponsiveLayout(
-        mobile: _buildMobileLayout(repoUrl),
-        tablet: _buildTabletLayout(repoUrl),
-        desktop: _buildDesktopLayout(repoUrl),
+        mobile: _buildMobile(repoUrl),
+        tablet: _buildTablet(repoUrl),
+        desktop: _buildDesktop(repoUrl),
       ),
     );
   }
 
-  Widget _buildMobileLayout(String repoUrl) {
-    return Column(
-      children: [
-        GitHubLink(repoUrl: repoUrl),
-        Expanded(child: ContentPanel(controller: _tocController)),
-      ],
-    );
-  }
+  Widget _buildMobile(String repoUrl) => Column(
+    children: [
+      Expanded(child: ContentPanel(controller: _tocController)),
+      FloatingActionButton(
+        onPressed: () {},
+        child: GitHubLink(repoUrl: repoUrl),
+      ),
+    ],
+  );
 
-  Widget _buildTabletLayout(String repoUrl) {
-    final screenWidth = MediaQuery.of(context).size.width;
-
-    double tocWidth = 250;
-    if (screenWidth < 900) {
-      tocWidth = 180;
-    }
+  Widget _buildTablet(String repoUrl) {
+    final w = MediaQuery.of(context).size.width;
+    final tocWidth = w < 900 ? 180.0 : 250.0;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -91,13 +107,9 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _buildDesktopLayout(String repoUrl) {
-    final screenWidth = MediaQuery.of(context).size.width;
-
-    double tocWidth = 250;
-    if (screenWidth < 1200) {
-      tocWidth = 200;
-    }
+  Widget _buildDesktop(String repoUrl) {
+    final w = MediaQuery.of(context).size.width;
+    final tocWidth = w < 1200 ? 200.0 : 250.0;
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 32),
@@ -114,7 +126,6 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-
           const SizedBox(width: 32),
           SizedBox(
             width: tocWidth,

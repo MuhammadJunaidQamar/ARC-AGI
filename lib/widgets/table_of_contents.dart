@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../controllers/toc_controller.dart';
 import '../data/sections_data.dart';
+import '../models/section_content.dart';
 
 class TableOfContents extends StatelessWidget {
   final TocController controller;
@@ -8,6 +9,22 @@ class TableOfContents extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final entries = <_TocEntry>[];
+    int keyIndex = 0;
+
+    for (var sec in sections) {
+      entries.add(_TocEntry(text: sec.title, keyIndex: keyIndex++, level: 1));
+
+      for (var block in sec.contentBlocks) {
+        if (block is HeadingContent) {
+          final lvl = block.level.clamp(2, 10);
+          entries.add(
+            _TocEntry(text: block.text, keyIndex: keyIndex++, level: lvl),
+          );
+        }
+      }
+    }
+
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -28,18 +45,20 @@ class TableOfContents extends StatelessWidget {
                 const SizedBox(height: 12),
                 Expanded(
                   child: ListView.builder(
-                    itemCount: sections.length,
+                    itemCount: entries.length,
                     itemBuilder: (context, idx) {
+                      final entry = entries[idx];
                       final isSelected = idx == controller.currentIndex;
                       return InkWell(
-                        onTap: () => controller.scrollToIndex(idx),
+                        onTap: () => controller.scrollToIndex(entry.keyIndex),
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 8,
-                            horizontal: 4,
+                          padding: EdgeInsets.only(
+                            left: (entry.level - 1) * 12.0 + 4.0,
+                            top: 8,
+                            bottom: 8,
                           ),
                           child: Text(
-                            sections[idx].title,
+                            entry.text,
                             style: TextStyle(
                               color:
                                   isSelected
@@ -64,4 +83,12 @@ class TableOfContents extends StatelessWidget {
       ),
     );
   }
+}
+
+class _TocEntry {
+  final String text;
+  final int keyIndex;
+  final int level;
+
+  _TocEntry({required this.text, required this.keyIndex, required this.level});
 }
