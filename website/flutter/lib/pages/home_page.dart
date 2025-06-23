@@ -45,6 +45,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     const repoUrl = 'https://github.com/MuhammadJunaidQamar/ARC-AGI';
+    const playGroundUrl = 'https://arc-agi-play-ground.web.app/';
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -54,29 +55,40 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: const Color.fromARGB(255, 32, 148, 243),
       ),
       body: ResponsiveLayout(
-        mobile: _buildMobile(repoUrl),
-        tablet: _buildTablet(repoUrl),
-        desktop: _buildDesktop(repoUrl),
+        mobile: _buildMobile(repoUrl, playGroundUrl),
+        tablet: _buildTablet(repoUrl, playGroundUrl),
+        desktop: _buildDesktop(repoUrl, playGroundUrl),
       ),
     );
   }
 
-  Widget _buildMobile(String repoUrl) => Column(
+  Widget _buildMobile(String repoUrl, String playGroundUrl) => Column(
     children: [
-      GitHubLink(repoUrl: repoUrl),
+      Row(
+        children: [
+          Link(url: repoUrl, text: 'Source Code', openInNewTab: true),
+          const SizedBox(height: 16),
+          Link(url: playGroundUrl, text: 'Playground'),
+        ],
+      ),
       Expanded(child: ContentPanel(controller: _tocController)),
     ],
   );
 
-  Widget _buildTablet(String repoUrl) {
+  Widget _buildTablet(String repoUrl, String playGroundUrl) {
     final w = MediaQuery.of(context).size.width;
     final tocWidth = w < 900 ? 180.0 : 250.0;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        GitHubLink(repoUrl: repoUrl),
-        const SizedBox(height: 16),
+        Row(
+          children: [
+            Link(url: repoUrl, text: 'Source Code', openInNewTab: true),
+            const SizedBox(height: 16),
+            Link(url: playGroundUrl, text: 'Playground'),
+          ],
+        ),
         Expanded(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -101,7 +113,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _buildDesktop(String repoUrl) {
+  Widget _buildDesktop(String repoUrl, String playGroundUrl) {
     final w = MediaQuery.of(context).size.width;
     final tocWidth = w < 1200 ? 200.0 : 250.0;
 
@@ -111,7 +123,15 @@ class _HomePageState extends State<HomePage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          GitHubLink(repoUrl: repoUrl),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(height: 16),
+              Link(url: repoUrl, text: 'Source Code', openInNewTab: true),
+              const SizedBox(height: 16),
+              Link(url: playGroundUrl, text: 'Playground'),
+            ],
+          ),
           Expanded(
             child: Center(
               child: ConstrainedBox(
