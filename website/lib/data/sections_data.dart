@@ -180,7 +180,7 @@ final List<SectionInfo> sections = [
         TextSegment(
           'of programs is huge (we estimated ~4^11 possibilities under our length limit',
         ),
-        LinkSegment('code', ''), //TODO: Add link to code
+        LinkSegment('code', 'https://github.com/MuhammadJunaidQamar/ARC-AGI'),
         TextSegment(
           '). Hence, exhaustive search is infeasible, motivating a guided search strategy.',
         ),
@@ -347,7 +347,7 @@ final List<SectionInfo> sections = [
         TextSegment(
           'On the example task above, our GA quickly found the correct program. Starting from random single-operation programs, elitist mutations discovered the four-step program in a few iterations. The search space was small (4^11 possibilities with our function set)',
         ),
-        LinkSegment('code', ''), //TODO: Add link to code
+        LinkSegment('code', 'https://github.com/MuhammadJunaidQamar/ARC-AGI'),
         TextSegment(
           ', and the GA’s simple hill-climbing sufficed. This demonstrates that our DSL has enough expressive power to encode the intended solution. In general, for tasks that align well with our primitives (color grouping, cropping, etc.), solutions are found. For tasks requiring logic not covered by our DSL (e.g. parity checks, sequential counting), the GA will fail or get stuck, reflecting the language’s limitations.',
         ),
