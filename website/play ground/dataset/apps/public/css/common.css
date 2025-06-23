@@ -1,0 +1,166 @@
+.cell {
+    width: 100px;
+    height: 100px;
+    border-left: 1px solid #555;
+    border-top: 1px solid #555;
+    float: left;
+    background-color: #000;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.row {
+    clear: both;
+}
+
+.symbol_0 {
+    background-color: #000;
+}
+
+.symbol_1 {
+    background-color: #0074D9;
+    /* blue */
+}
+
+.symbol_2 {
+    background-color: #FF4136;
+    /* red */
+}
+
+.symbol_3 {
+    background-color: #2ECC40;
+    /* green */
+}
+
+.symbol_4 {
+    background-color: #FFDC00;
+    /* yellow */
+}
+
+.symbol_5 {
+    background-color: #AAAAAA;
+    /* grey */
+}
+
+.symbol_6 {
+    background-color: #F012BE;
+    /* fuschia */
+}
+
+.symbol_7 {
+    background-color: #FF851B;
+    /* orange */
+}
+
+.symbol_8 {
+    background-color: #7FDBFF;
+    /* teal */
+}
+
+.symbol_9 {
+    background-color: #870C25;
+    /* brown */
+}
+
+
+/*Symbol picker*/
+
+.symbol_preview {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.grid_size_field {
+    width: 50px;
+}
+
+.selected-symbol-preview {
+    border: 2px solid orange;
+}
+
+
+/*Selectable*/
+
+.ui-selected {
+    background-image: url(../img/black-twill.png), url(../img/brushed-alum.png);
+}
+
+.ui-selectable-helper {
+    border: 1px dotted #ddd;
+    position: absolute;
+    z-index: 1000;
+}
+
+/*Message display*/
+
+#error_display {
+    color: red;
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    margin: 20px;
+}
+
+#info_display {
+    color: green;
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    margin: 20px;
+}
+
+.custom-btn {
+    /* Layout & typography */
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+    /* Colors */
+    color: #1E88E5;
+    /* Flutter-like link blue */
+    background-color: #F7F6FA;
+    /* Very pale grey/white */
+
+    /* Shape */
+    border: none;
+    border-radius: 999px;
+    /* Fully rounded */
+
+    /* “Elevation” shadow */
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.06),
+        0 2px 2px rgba(0, 0, 0, 0.04),
+        0 4px 4px rgba(0, 0, 0, 0.03);
+
+    /* Subtle transition */
+    transition: background-color 150ms ease,
+        box-shadow 150ms ease;
+}
+
+.custom-btn:hover {
+    background-color: #EDEBEE;
+    /* Slightly darker on hover */
+    box-shadow:
+        0 2px 2px rgba(0, 0, 0, 0.1),
+        0 4px 4px rgba(0, 0, 0, 0.07),
+        0 8px 8px rgba(0, 0, 0, 0.05);
+}
+
+.custom-btn:active {
+    /* Simulate press by insetting the shadow a bit */
+    box-shadow:
+        inset 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.custom-btn:disabled {
+    background-color: #F0EFF2;
+    color: #A0A0A0;
+    box-shadow: none;
+    cursor: not-allowed;
+}
