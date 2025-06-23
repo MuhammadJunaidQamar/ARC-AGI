@@ -43,7 +43,7 @@ final List<SectionInfo> sections = [
         ),
         BoldSegment(' GA-based program search '),
         TextSegment(
-          'using this DSL, with code analysis. (3) Comparative discussion placing our results in context: we compare performance of DSL+GA to prior DSL solutions, large-scale neural methods, and frontier LLMs. We remove any references to Kaggle usage while still respecting publicly reported results',
+          'using this DSL, with code analysis. (3) Comparative discussion placing our results in context: we compare performance of DSL+GA to prior DSL solutions, large-scale neural methods, and frontier LLMs.',
         ),
       ]),
       ParagraphContent([
@@ -59,7 +59,7 @@ final List<SectionInfo> sections = [
     contentBlocks: <SectionContent>[
       ParagraphContent([
         TextSegment(
-          ' Solving ARC tasks has attracted interest from both symbolic and neural perspectives. Early Kaggle/ARC competition entries often used hand-crafted program search. Fischer et al. introduced a',
+          ' Solving ARC tasks has attracted interest from both symbolic and neural perspectives. Early ARC competition entries often used hand-crafted program search. Fischer et al. introduced a',
         ),
         BoldSegment(' DSL + Genetic Programming '),
         TextSegment(

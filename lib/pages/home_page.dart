@@ -1,5 +1,3 @@
-// lib/pages/home_page.dart
-
 import 'package:flutter/material.dart';
 import '../controllers/toc_controller.dart';
 import '../utils/responsive_layout.dart';
@@ -22,7 +20,6 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
 
-    // Build flat key & level lists
     final keys = <GlobalKey>[];
     final levels = <int>[];
     for (var sec in sections) {
@@ -67,10 +64,7 @@ class _HomePageState extends State<HomePage> {
   Widget _buildMobile(String repoUrl) => Column(
     children: [
       Expanded(child: ContentPanel(controller: _tocController)),
-      FloatingActionButton(
-        onPressed: () {},
-        child: GitHubLink(repoUrl: repoUrl),
-      ),
+      GitHubLink(repoUrl: repoUrl),
     ],
   );
 

@@ -104,7 +104,7 @@ class ContentPanel extends StatelessWidget {
                                                 );
                                               }
                                               if (seg is ImageSegment) {
-                                                final img = Image.network(
+                                                final img = Image.asset(
                                                   seg.src,
                                                   width: seg.width,
                                                   height: seg.height,
@@ -338,7 +338,7 @@ class ContentPanel extends StatelessWidget {
                                 );
                               }
                               if (seg is ImageSegment) {
-                                final img = Image.network(
+                                final img = Image.asset(
                                   seg.src,
                                   width: seg.width,
                                   height: seg.height,
