@@ -2,13 +2,8 @@ import 'package:flutter/material.dart';
 
 class TocController extends ChangeNotifier {
   final ScrollController scrollController = ScrollController();
-
-  /// One key per “thing you’ll scroll to” (sections + sub-headings).
   final List<GlobalKey> sectionKeys;
-
-  /// A matching list of levels: 1 = top section, 2 = sub-heading, 3 = sub-sub, etc.
   final List<int> sectionLevels;
-
   int currentIndex = 0;
 
   TocController({required this.sectionKeys, required this.sectionLevels})

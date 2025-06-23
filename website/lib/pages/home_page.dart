@@ -63,8 +63,8 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildMobile(String repoUrl) => Column(
     children: [
-      Expanded(child: ContentPanel(controller: _tocController)),
       GitHubLink(repoUrl: repoUrl),
+      Expanded(child: ContentPanel(controller: _tocController)),
     ],
   );
 
