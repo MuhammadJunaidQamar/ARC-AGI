@@ -50,129 +50,119 @@ class ContentPanel extends StatelessWidget {
                   ] else if (block is ListContent) ...[
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children:
-                          block.items.map((segments) {
-                            return Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 2),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    block.solid ? '• ' : '– ',
-                                    style: theme.bodyLarge,
-                                  ),
-                                  Expanded(
-                                    child: RichText(
-                                      textAlign: TextAlign.justify,
-                                      text: TextSpan(
-                                        children:
-                                            segments.map((seg) {
-                                              if (seg is TextSegment) {
-                                                return TextSpan(
-                                                  text: seg.text,
-                                                  style: theme.bodyLarge,
-                                                );
-                                              }
-                                              if (seg is BoldSegment) {
-                                                return TextSpan(
-                                                  text: seg.text,
-                                                  style: theme.bodyLarge
-                                                      ?.copyWith(
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                      ),
-                                                );
-                                              }
-                                              if (seg is LinkSegment) {
-                                                return TextSpan(
-                                                  text: seg.text,
-                                                  style: theme.bodyLarge
-                                                      ?.copyWith(
-                                                        color: Colors.blue,
-                                                        decoration:
-                                                            TextDecoration
-                                                                .underline,
-                                                      ),
-                                                  recognizer:
-                                                      TapGestureRecognizer()
-                                                        ..onTap =
-                                                            () => launchUrl(
-                                                              Uri.parse(
-                                                                seg.url,
-                                                              ),
-                                                            ),
-                                                );
-                                              }
-                                              if (seg is ImageSegment) {
-                                                final img = Image.asset(
-                                                  seg.src,
-                                                  width: seg.width,
-                                                  height: seg.height,
-                                                );
-                                                return WidgetSpan(
-                                                  alignment:
-                                                      PlaceholderAlignment
-                                                          .middle,
-                                                  child: Padding(
-                                                    padding:
-                                                        const EdgeInsets.symmetric(
-                                                          horizontal: 4,
-                                                        ),
-                                                    child: Align(
-                                                      alignment: seg.alignment,
-                                                      child: img,
-                                                    ),
-                                                  ),
-                                                );
-                                              }
-                                              if (seg is CodeSegment) {
-                                                return WidgetSpan(
-                                                  alignment:
-                                                      PlaceholderAlignment
-                                                          .middle,
-                                                  child: Container(
-                                                    padding:
-                                                        const EdgeInsets.symmetric(
-                                                          horizontal: 6,
-                                                          vertical: 2,
-                                                        ),
-                                                    margin:
-                                                        const EdgeInsets.symmetric(
-                                                          horizontal: 2,
-                                                        ),
-                                                    decoration: BoxDecoration(
-                                                      color:
-                                                          Colors.grey.shade200,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                            4,
-                                                          ),
-                                                    ),
-                                                    child: Text(
-                                                      seg.code,
-                                                      style: theme.bodyLarge
-                                                          ?.copyWith(
-                                                            fontFamily:
-                                                                'monospace',
-                                                            fontSize:
-                                                                theme
-                                                                    .bodyLarge!
-                                                                    .fontSize! *
-                                                                0.9,
-                                                          ),
-                                                    ),
-                                                  ),
-                                                );
-                                              }
-                                              return const TextSpan();
-                                            }).toList(),
-                                      ),
-                                    ),
-                                  ),
-                                ],
+                      children: block.items.map((segments) {
+                        return Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 2),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                block.solid ? '• ' : '– ',
+                                style: theme.bodyLarge,
                               ),
-                            );
-                          }).toList(),
+                              Expanded(
+                                child: RichText(
+                                  textAlign: TextAlign.justify,
+                                  text: TextSpan(
+                                    children: segments.map((seg) {
+                                      if (seg is TextSegment) {
+                                        return TextSpan(
+                                          text: seg.text,
+                                          style: theme.bodyLarge,
+                                        );
+                                      }
+                                      if (seg is BoldSegment) {
+                                        return TextSpan(
+                                          text: seg.text,
+                                          style: theme.bodyLarge?.copyWith(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        );
+                                      }
+                                      if (seg is LinkSegment) {
+                                        return WidgetSpan(
+                                          alignment:
+                                              PlaceholderAlignment.middle,
+                                          child: ElevatedButton(
+                                            onPressed: () =>
+                                                launchUrl(Uri.parse(seg.url)),
+                                            style: ElevatedButton.styleFrom(
+                                              padding:
+                                                  const EdgeInsets.symmetric(
+                                                    horizontal: 8,
+                                                    vertical: 6,
+                                                  ),
+                                              foregroundColor:
+                                                  const Color.fromARGB(
+                                                    255,
+                                                    32,
+                                                    148,
+                                                    243,
+                                                  ),
+                                              textStyle: theme.bodySmall,
+                                            ),
+                                            child: Text(seg.text),
+                                          ),
+                                        );
+                                      }
+                                      if (seg is ImageSegment) {
+                                        final img = Image.asset(
+                                          seg.src,
+                                          width: seg.width,
+                                          height: seg.height,
+                                        );
+                                        return WidgetSpan(
+                                          alignment:
+                                              PlaceholderAlignment.middle,
+                                          child: Padding(
+                                            padding: const EdgeInsets.symmetric(
+                                              horizontal: 4,
+                                            ),
+                                            child: Align(
+                                              alignment: seg.alignment,
+                                              child: img,
+                                            ),
+                                          ),
+                                        );
+                                      }
+                                      if (seg is CodeSegment) {
+                                        return WidgetSpan(
+                                          alignment:
+                                              PlaceholderAlignment.middle,
+                                          child: Container(
+                                            padding: const EdgeInsets.symmetric(
+                                              horizontal: 6,
+                                              vertical: 2,
+                                            ),
+                                            margin: const EdgeInsets.symmetric(
+                                              horizontal: 2,
+                                            ),
+                                            decoration: BoxDecoration(
+                                              color: Colors.grey.shade200,
+                                              borderRadius:
+                                                  BorderRadius.circular(4),
+                                            ),
+                                            child: Text(
+                                              seg.code,
+                                              style: theme.bodyLarge?.copyWith(
+                                                fontFamily: 'monospace',
+                                                fontSize:
+                                                    theme.bodyLarge!.fontSize! *
+                                                    0.9,
+                                              ),
+                                            ),
+                                          ),
+                                        );
+                                      }
+                                      return const TextSpan();
+                                    }).toList(),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      }).toList(),
                     ),
                     const SizedBox(height: 12),
                   ] else if (block is CodeBlockContent) ...[
@@ -255,8 +245,9 @@ class ContentPanel extends StatelessWidget {
                                   ))
                                     Builder(
                                       builder: (_) {
-                                        final symbol =
-                                            line.isNotEmpty ? line[0] : '';
+                                        final symbol = line.isNotEmpty
+                                            ? line[0]
+                                            : '';
                                         Color symbolColor;
                                         switch (symbol) {
                                           case '+':
@@ -289,8 +280,8 @@ class ContentPanel extends StatelessWidget {
                                               TextSpan(
                                                 text:
                                                     symbolColor != Colors.white
-                                                        ? line.substring(1)
-                                                        : line,
+                                                    ? line.substring(1)
+                                                    : line,
                                               ),
                                             ],
                                           ),
@@ -308,82 +299,89 @@ class ContentPanel extends StatelessWidget {
                     RichText(
                       textAlign: TextAlign.justify,
                       text: TextSpan(
-                        children:
-                            block.segments.map((seg) {
-                              if (seg is TextSegment) {
-                                return TextSpan(
-                                  text: seg.text,
-                                  style: theme.bodyLarge,
-                                );
-                              }
-                              if (seg is BoldSegment) {
-                                return TextSpan(
-                                  text: seg.text,
+                        children: block.segments.map((seg) {
+                          if (seg is TextSegment) {
+                            return TextSpan(
+                              text: seg.text,
+                              style: theme.bodyLarge,
+                            );
+                          }
+                          if (seg is BoldSegment) {
+                            return TextSpan(
+                              text: seg.text,
+                              style: theme.bodyLarge?.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            );
+                          }
+                          if (seg is LinkSegment) {
+                            return WidgetSpan(
+                              alignment: PlaceholderAlignment.middle,
+                              child: ElevatedButton(
+                                onPressed: () => launchUrl(Uri.parse(seg.url)),
+                                style: ElevatedButton.styleFrom(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 8,
+                                    vertical: 6,
+                                  ),
+                                  foregroundColor: const Color.fromARGB(
+                                    255,
+                                    32,
+                                    148,
+                                    243,
+                                  ),
+                                  textStyle: theme.bodySmall,
+                                ),
+                                child: Text(seg.text),
+                              ),
+                            );
+                          }
+                          if (seg is ImageSegment) {
+                            final img = Image.asset(
+                              seg.src,
+                              width: seg.width,
+                              height: seg.height,
+                            );
+                            return WidgetSpan(
+                              alignment: PlaceholderAlignment.middle,
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 4,
+                                ),
+                                child: Align(
+                                  alignment: seg.alignment,
+                                  child: img,
+                                ),
+                              ),
+                            );
+                          }
+                          if (seg is CodeSegment) {
+                            return WidgetSpan(
+                              alignment: PlaceholderAlignment.middle,
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 6,
+                                  vertical: 2,
+                                ),
+                                margin: const EdgeInsets.symmetric(
+                                  horizontal: 2,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey.shade200,
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                                child: Text(
+                                  seg.code,
                                   style: theme.bodyLarge?.copyWith(
-                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'monospace',
+                                    fontSize: theme.bodyLarge!.fontSize! * 0.9,
                                   ),
-                                );
-                              }
-                              if (seg is LinkSegment) {
-                                return TextSpan(
-                                  text: seg.text,
-                                  style: theme.bodyLarge?.copyWith(
-                                    color: Colors.blue,
-                                    decoration: TextDecoration.underline,
-                                  ),
-                                  recognizer:
-                                      TapGestureRecognizer()
-                                        ..onTap =
-                                            () => launchUrl(Uri.parse(seg.url)),
-                                );
-                              }
-                              if (seg is ImageSegment) {
-                                final img = Image.asset(
-                                  seg.src,
-                                  width: seg.width,
-                                  height: seg.height,
-                                );
-                                return WidgetSpan(
-                                  alignment: PlaceholderAlignment.middle,
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                      horizontal: 4,
-                                    ),
-                                    child: Align(
-                                      alignment: seg.alignment,
-                                      child: img,
-                                    ),
-                                  ),
-                                );
-                              }
-                              if (seg is CodeSegment) {
-                                return WidgetSpan(
-                                  alignment: PlaceholderAlignment.middle,
-                                  child: Container(
-                                    padding: const EdgeInsets.symmetric(
-                                      horizontal: 6,
-                                      vertical: 2,
-                                    ),
-                                    margin: const EdgeInsets.symmetric(
-                                      horizontal: 2,
-                                    ),
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey.shade200,
-                                      borderRadius: BorderRadius.circular(4),
-                                    ),
-                                    child: Text(
-                                      seg.code,
-                                      style: theme.bodyLarge?.copyWith(
-                                        fontFamily: 'monospace',
-                                        fontSize:
-                                            theme.bodyLarge!.fontSize! * 0.9,
-                                      ),
-                                    ),
-                                  ),
-                                );
-                              }
-                              return const TextSpan();
-                            }).toList(),
+                                ),
+                              ),
+                            );
+                          }
+                          return const TextSpan();
+                        }).toList(),
                       ),
                     ),
                     const SizedBox(height: 12),
