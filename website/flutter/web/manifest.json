@@ -1,11 +1,11 @@
 {
-    "name": "arc_agi",
-    "short_name": "arc_agi",
+    "name": "ARC-AGI",
+    "short_name": "ARC-AGI",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "A web-based platform for building and deploying Artificial General Intelligence (AGI) research.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

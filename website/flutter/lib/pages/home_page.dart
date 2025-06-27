@@ -1,3 +1,4 @@
+import 'package:arc_agi/widgets/download_research_paper.dart';
 import 'package:flutter/material.dart';
 import '../controllers/toc_controller.dart';
 import '../utils/responsive_layout.dart';
@@ -67,8 +68,11 @@ class _HomePageState extends State<HomePage> {
       Row(
         children: [
           Link(url: repoUrl, text: 'Source Code', openInNewTab: true),
-          const SizedBox(height: 16),
+          const SizedBox(width: 16),
           Link(url: playGroundUrl, text: 'Playground'),
+          const Spacer(),
+          DownloadResearchPaper(),
+          const SizedBox(width: 16),
         ],
       ),
       Expanded(child: ContentPanel(controller: _tocController)),
@@ -85,8 +89,11 @@ class _HomePageState extends State<HomePage> {
         Row(
           children: [
             Link(url: repoUrl, text: 'Source Code', openInNewTab: true),
-            const SizedBox(height: 16),
+            const SizedBox(width: 16),
             Link(url: playGroundUrl, text: 'Playground'),
+            const Spacer(),
+            DownloadResearchPaper(),
+            const SizedBox(width: 16),
           ],
         ),
         Expanded(
@@ -130,6 +137,11 @@ class _HomePageState extends State<HomePage> {
               Link(url: repoUrl, text: 'Source Code', openInNewTab: true),
               const SizedBox(height: 16),
               Link(url: playGroundUrl, text: 'Playground'),
+              Spacer(),
+              Image.asset('assets/images/logo.png'),
+              Spacer(),
+              DownloadResearchPaper(),
+              const SizedBox(height: 16),
             ],
           ),
           Expanded(

@@ -1,0 +1,401 @@
+Task Number,Task,Fitness Score,Program,Primitives
+0,00576224.json,"(np.float64(5.0), np.float64(36.0), np.float64(4.0), np.float64(5.0))",splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+1,009d5c81.json,"(np.float64(2.0), np.float64(196.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> tail >> negative_lifted,"groupByColor_lifted, negative_lifted, tail"
+2,00dbd492.json,"(np.float64(2.0), np.float64(137.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+3,03560426.json,"(np.float64(5.0), np.float64(80.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> intersect >> negative_lifted,"groupByColor_lifted, intersect, negative_lifted"
+4,05a7bcf2.json,"(np.float64(5.0), np.float64(656.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+5,0607ce86.json,"(np.float64(2.0), np.float64(454.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+6,0692e18c.json,"(np.float64(3.0), np.float64(21.0), np.float64(6.0), np.float64(8.0))",splitH_lifted >> intersect >> negative_lifted,"intersect, negative_lifted, splitH_lifted"
+7,070dd51e.json,"(np.float64(6.0), np.float64(181.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+8,08573cc6.json,"(np.float64(2.0), np.float64(91.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+9,0934a4d8.json,"(np.float64(6.0), np.float64(879.0), np.float64(23.0), np.float64(27.0))",negative_lifted >> negative_lifted,negative_lifted
+10,09c534e7.json,"(np.float64(3.0), np.float64(324.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+11,0a1d4ef5.json,"(np.float64(3.0), np.float64(533.0), np.float64(27.0), np.float64(27.0))",union,union
+12,0a2355a6.json,"(np.float64(5.0), np.float64(210.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+13,0b17323b.json,"(np.float64(1.0), np.float64(224.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+14,0bb8deee.json,"(np.float64(3.0), np.float64(173.0), np.float64(6.0), np.float64(10.0))",groupByColor_lifted >> negative_lifted >> tail,"groupByColor_lifted, negative_lifted, tail"
+15,0becf7df.json,"(np.float64(5.0), np.float64(100.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+16,0c786b71.json,"(np.float64(4.0), np.float64(48.0), np.float64(4.0), np.float64(5.0))",splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+17,0c9aba6e.json,"(np.float64(4.0), np.float64(45.0), np.float64(0.0), np.float64(7.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+18,0d87d2a6.json,"(np.float64(1.0), np.float64(172.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+19,0e671a1a.json,"(np.float64(5.0), np.float64(149.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+20,0f63c0b9.json,"(np.float64(4.0), np.float64(133.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+21,103eff5b.json,"(np.float64(5.0), np.float64(264.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+22,11e1fe23.json,"(np.float64(5.0), np.float64(128.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+23,12422b43.json,"(np.float64(5.0), np.float64(32.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+24,12997ef3.json,"(np.float64(1.0), np.float64(112.0), np.float64(8.0), np.float64(5.0))",groupByColor_lifted >> sortByWeight >> negative_lifted,"groupByColor_lifted, negative_lifted, sortByWeight"
+25,12eac192.json,"(np.float64(3.0), np.float64(7.0), np.float64(0.0), np.float64(2.0))",splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+26,136b0064.json,"(np.float64(6.0), np.float64(151.0), np.float64(8.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+27,13713586.json,"(np.float64(3.0), np.float64(170.0), np.float64(0.0), np.float64(13.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+28,137f0df0.json,"(np.float64(3.0), np.float64(88.0), np.float64(0.0), np.float64(8.0))",splitH_lifted >> splitH_lifted >> intersect,"intersect, splitH_lifted"
+29,140c817e.json,"(np.float64(5.0), np.float64(121.0), np.float64(0.0), np.float64(9.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+30,14754a24.json,"(np.float64(4.0), np.float64(210.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+31,15113be4.json,"(np.float64(2.0), np.float64(529.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+32,15663ba9.json,"(np.float64(2.0), np.float64(224.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+33,15696249.json,"(np.float64(3.0), np.float64(27.0), np.float64(6.0), np.float64(8.0))",negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+34,16b78196.json,"(np.float64(5.0), np.float64(841.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> reverse,"groupByColor_lifted, negative_lifted, reverse"
+35,17b80ad2.json,"(np.float64(3.0), np.float64(44.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+36,17cae0c1.json,"(np.float64(4.0), np.float64(24.0), np.float64(6.0), np.float64(2.0))",negative_lifted >> splitH_lifted >> cropToContent_lifted,"cropToContent_lifted, negative_lifted, splitH_lifted"
+37,18419cfa.json,"(np.float64(3.0), np.float64(375.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+38,184a9768.json,"(np.float64(4.0), np.float64(381.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+39,195ba7dc.json,"(np.float64(2.0), np.float64(45.0), np.float64(7.0), np.float64(0.0))",groupByColor_lifted >> tail >> negative_lifted,"groupByColor_lifted, negative_lifted, tail"
+40,1990f7a8.json,"(np.float64(0.0), np.float64(238.0), np.float64(9.0), np.float64(10.0))",negative_lifted,negative_lifted
+41,19bb5feb.json,"(np.float64(2.0), np.float64(217.0), np.float64(14.0), np.float64(12.0))",reverse >> groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted, reverse"
+42,1a2e2828.json,"(np.float64(2.0), np.float64(8.0), np.float64(2.0), np.float64(2.0))",groupByColor_lifted >> intersect >> negative_lifted,"groupByColor_lifted, intersect, negative_lifted"
+43,1a6449f1.json,"(np.float64(3.0), np.float64(446.0), np.float64(16.0), np.float64(18.0))",groupByColor_lifted >> sortByWeight >> negative_lifted,"groupByColor_lifted, negative_lifted, sortByWeight"
+44,1acc24af.json,"(np.float64(2.0), np.float64(144.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+45,1c02dbbe.json,"(np.float64(3.0), np.float64(222.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> sortByWeight,"groupByColor_lifted, negative_lifted, sortByWeight"
+46,1c0d0a4b.json,"(np.float64(2.0), np.float64(45.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+47,1c56ad9f.json,"(np.float64(0.0), np.float64(193.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+48,1d0a4b61.json,"(np.float64(4.0), np.float64(625.0), np.float64(0.0), np.float64(13.0))",splitH_lifted >> union >> negative_lifted,"negative_lifted, splitH_lifted, union"
+49,1d398264.json,"(np.float64(6.0), np.float64(345.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+50,1da012fc.json,"(np.float64(6.0), np.float64(280.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+51,1e81d6f9.json,"(np.float64(7.0), np.float64(220.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+52,1e97544e.json,"(np.float64(9.0), np.float64(529.0), np.float64(0.0), np.float64(12.0))",groupByColor_lifted >> splitH_lifted >> intersect,"groupByColor_lifted, intersect, splitH_lifted"
+53,2037f2c7.json,"(np.float64(2.0), np.float64(273.0), np.float64(11.0), np.float64(15.0))",cropToContent_lifted >> groupByColor_lifted >> negative_lifted,"cropToContent_lifted, groupByColor_lifted, negative_lifted"
+54,2072aba6.json,"(np.float64(3.0), np.float64(22.0), np.float64(3.0), np.float64(5.0))",splitH_lifted >> reverse,"reverse, splitH_lifted"
+55,20818e16.json,"(np.float64(1.0), np.float64(79.0), np.float64(7.0), np.float64(7.0))",sortByWeight,sortByWeight
+56,20981f0e.json,"(np.float64(1.0), np.float64(154.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+57,212895b5.json,"(np.float64(5.0), np.float64(273.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+58,21f83797.json,"(np.float64(2.0), np.float64(96.0), np.float64(0.0), np.float64(10.0))",splitH_lifted >> negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+59,22a4bbc2.json,"(np.float64(2.0), np.float64(70.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+60,25094a63.json,"(np.float64(7.0), np.float64(900.0), np.float64(0.0), np.float64(23.0))",negative_lifted >> splitH_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+61,2546ccf6.json,"(np.float64(2.0), np.float64(332.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+62,256b0a75.json,"(np.float64(7.0), np.float64(375.0), np.float64(0.0), np.float64(18.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+63,2685904e.json,"(np.float64(4.0), np.float64(98.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+64,2697da3f.json,"(np.float64(0.0), np.float64(82.0), np.float64(7.0), np.float64(7.0))",negative_lifted,negative_lifted
+65,2753e76c.json,"(np.float64(0.0), np.float64(107.0), np.float64(11.0), np.float64(12.0))",sortByColor,sortByColor
+66,27a77e38.json,"(np.float64(7.0), np.float64(48.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+67,27f8ce4f.json,"(np.float64(9.0), np.float64(36.0), np.float64(6.0), np.float64(6.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+68,281123b4.json,"(np.float64(7.0), np.float64(62.0), np.float64(15.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+69,292dd178.json,"(np.float64(4.0), np.float64(99.0), np.float64(0.0), np.float64(9.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+70,29700607.json,"(np.float64(4.0), np.float64(93.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+71,2a5f8217.json,"(np.float64(5.0), np.float64(121.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+72,2b01abd0.json,"(np.float64(2.0), np.float64(144.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+73,2c0b0aff.json,"(np.float64(1.0), np.float64(101.0), np.float64(7.0), np.float64(0.0))",splitH_lifted >> cropToContent_lifted,"cropToContent_lifted, splitH_lifted"
+74,2c737e39.json,"(np.float64(3.0), np.float64(83.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+75,2f0c5170.json,"(np.float64(1.0), np.float64(331.0), np.float64(11.0), np.float64(11.0))",groupByColor_lifted >> negative_lifted >> tail,"groupByColor_lifted, negative_lifted, tail"
+76,310f3251.json,"(np.float64(1.0), np.float64(31.0), np.float64(8.0), np.float64(8.0))",negative_lifted,negative_lifted
+77,3194b014.json,"(np.float64(2.0), np.float64(391.0), np.float64(17.0), np.float64(17.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+78,319f2597.json,"(np.float64(8.0), np.float64(337.0), np.float64(0.0), np.float64(15.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+79,31adaf00.json,"(np.float64(1.0), np.float64(67.0), np.float64(1.0), np.float64(8.0))",splitH_lifted >> cropToContent_lifted >> splitH_lifted,"cropToContent_lifted, splitH_lifted"
+80,31d5ba1a.json,"(np.float64(5.0), np.float64(23.0), np.float64(0.0), np.float64(3.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+81,32e9702f.json,"(np.float64(3.0), np.float64(49.0), np.float64(0.0), np.float64(6.0))",splitH_lifted >> splitH_lifted >> intersect,"intersect, splitH_lifted"
+82,332efdb3.json,"(np.float64(1.0), np.float64(65.0), np.float64(0.0), np.float64(8.0))",splitH_lifted >> splitH_lifted >> splitH_lifted,splitH_lifted
+83,3391f8c0.json,"(np.float64(1.0), np.float64(100.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+84,33b52de3.json,"(np.float64(2.0), np.float64(529.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+85,3490cc26.json,"(np.float64(4.0), np.float64(572.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+86,34b99a2b.json,"(np.float64(5.0), np.float64(32.0), np.float64(5.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+87,351d6448.json,"(np.float64(2.0), np.float64(185.0), np.float64(0.0), np.float64(12.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+88,358ba94e.json,"(np.float64(0.0), np.float64(182.0), np.float64(14.0), np.float64(11.0))",negative_lifted,negative_lifted
+89,37d3e8b2.json,"(np.float64(3.0), np.float64(272.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+90,3979b1a8.json,"(np.float64(4.0), np.float64(100.0), np.float64(5.0), np.float64(9.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+91,3a301edc.json,"(np.float64(1.0), np.float64(116.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+92,3b4c2228.json,"(np.float64(3.0), np.float64(9.0), np.float64(2.0), np.float64(1.0))",splitH_lifted >> union,"splitH_lifted, union"
+93,3d31c5b3.json,"(np.float64(4.0), np.float64(66.0), np.float64(0.0), np.float64(9.0))",groupByColor_lifted >> negative_lifted >> sortByWeight,"groupByColor_lifted, negative_lifted, sortByWeight"
+94,3ed85e70.json,"(np.float64(5.0), np.float64(876.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+95,3ee1011a.json,"(np.float64(1.0), np.float64(84.0), np.float64(12.0), np.float64(16.0))",tail,tail
+96,3f23242b.json,"(np.float64(3.0), np.float64(78.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+97,40f6cd08.json,"(np.float64(4.0), np.float64(900.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+98,414297c0.json,"(np.float64(5.0), np.float64(96.0), np.float64(4.0), np.float64(0.0))",cropToContent_lifted >> splitH_lifted >> negative_lifted,"cropToContent_lifted, negative_lifted, splitH_lifted"
+99,423a55dc.json,"(np.float64(0.0), np.float64(47.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+100,42918530.json,"(np.float64(3.0), np.float64(344.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+101,42a15761.json,"(np.float64(0.0), np.float64(129.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+102,4364c1c4.json,"(np.float64(6.0), np.float64(156.0), np.float64(0.0), np.float64(9.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+103,456873bc.json,"(np.float64(1.0), np.float64(116.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+104,45737921.json,"(np.float64(6.0), np.float64(144.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+105,45bbe264.json,"(np.float64(5.0), np.float64(103.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+106,477d2879.json,"(np.float64(7.0), np.float64(167.0), np.float64(0.0), np.float64(12.0))",splitH_lifted >> splitH_lifted >> splitH_lifted,splitH_lifted
+107,47996f11.json,"(np.float64(9.0), np.float64(900.0), np.float64(0.0), np.float64(23.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+108,48131b3c.json,"(np.float64(0.0), np.float64(46.0), np.float64(4.0), np.float64(4.0))",groupByColor_lifted,groupByColor_lifted
+109,4852f2fa.json,"(np.float64(0.0), np.float64(76.0), np.float64(3.0), np.float64(6.0))",groupByColor_lifted >> negative_lifted >> tail,"groupByColor_lifted, negative_lifted, tail"
+110,48f8583b.json,"(np.float64(2.0), np.float64(27.0), np.float64(6.0), np.float64(8.0))",negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+111,4aab4007.json,"(np.float64(10.0), np.float64(784.0), np.float64(0.0), np.float64(14.0))",splitH_lifted >> groupByColor_lifted >> intersect,"groupByColor_lifted, intersect, splitH_lifted"
+112,4acc7107.json,"(np.float64(4.0), np.float64(75.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> intersect >> negative_lifted,"groupByColor_lifted, intersect, negative_lifted"
+113,4b6b68e5.json,"(np.float64(3.0), np.float64(160.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+114,4c177718.json,"(np.float64(2.0), np.float64(216.0), np.float64(0.0), np.float64(6.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+115,4cd1b7b2.json,"(np.float64(5.0), np.float64(16.0), np.float64(0.0), np.float64(3.0))",splitH_lifted >> splitH_lifted >> intersect,"intersect, splitH_lifted"
+116,4e45f183.json,"(np.float64(3.0), np.float64(361.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+117,4e469f39.json,"(np.float64(1.0), np.float64(76.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+118,4f537728.json,"(np.float64(1.0), np.float64(400.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+119,4ff4c9da.json,"(np.float64(2.0), np.float64(289.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+120,505fff84.json,"(np.float64(1.0), np.float64(50.0), np.float64(6.0), np.float64(5.0))",groupByColor_lifted >> tail >> union,"groupByColor_lifted, tail, union"
+121,506d28a5.json,"(np.float64(2.0), np.float64(40.0), np.float64(0.0), np.float64(5.0))",groupByColor_lifted >> tail >> negative_lifted,"groupByColor_lifted, negative_lifted, tail"
+122,50a16a69.json,"(np.float64(4.0), np.float64(81.0), np.float64(0.0), np.float64(7.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+123,50aad11f.json,"(np.float64(1.0), np.float64(49.0), np.float64(6.0), np.float64(8.0))",reverse,reverse
+124,50f325b5.json,"(np.float64(6.0), np.float64(306.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+125,516b51b7.json,"(np.float64(2.0), np.float64(210.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+126,5207a7b5.json,"(np.float64(2.0), np.float64(62.0), np.float64(0.0), np.float64(13.0))",splitH_lifted >> splitH_lifted >> splitH_lifted,splitH_lifted
+127,5289ad53.json,"(np.float64(1.0), np.float64(189.0), np.float64(12.0), np.float64(11.0))",sortByWeight,sortByWeight
+128,52fd389e.json,"(np.float64(2.0), np.float64(430.0), np.float64(0.0), np.float64(19.0))",negative_lifted >> splitH_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+129,54db823b.json,"(np.float64(3.0), np.float64(190.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+130,55059096.json,"(np.float64(1.0), np.float64(154.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+131,551d5bf1.json,"(np.float64(1.0), np.float64(497.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+132,55783887.json,"(np.float64(4.0), np.float64(240.0), np.float64(0.0), np.float64(12.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+133,575b1a71.json,"(np.float64(5.0), np.float64(97.0), np.float64(5.0), np.float64(6.0))",negative_lifted >> cropToContent_lifted >> splitH_lifted,"cropToContent_lifted, negative_lifted, splitH_lifted"
+134,5783df64.json,"(np.float64(10.0), np.float64(9.0), np.float64(3.0), np.float64(2.0))",splitH_lifted >> splitH_lifted >> intersect,"intersect, splitH_lifted"
+135,5833af48.json,"(np.float64(1.0), np.float64(87.0), np.float64(6.0), np.float64(9.0))",groupByColor_lifted >> tail >> union,"groupByColor_lifted, tail, union"
+136,58743b76.json,"(np.float64(4.0), np.float64(144.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+137,58e15b12.json,"(np.float64(4.0), np.float64(394.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+138,59341089.json,"(np.float64(4.0), np.float64(36.0), np.float64(9.0), np.float64(2.0))",negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+139,5a5a2103.json,"(np.float64(4.0), np.float64(279.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+140,5af49b42.json,"(np.float64(6.0), np.float64(159.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+141,5b526a93.json,"(np.float64(1.0), np.float64(304.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+142,5b692c0f.json,"(np.float64(3.0), np.float64(185.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+143,5b6cbef5.json,"(np.float64(0.0), np.float64(106.0), np.float64(12.0), np.float64(12.0))",negative_lifted,negative_lifted
+144,5d2a5c43.json,"(np.float64(2.0), np.float64(37.0), np.float64(5.0), np.float64(0.0))",groupByColor_lifted >> tail >> negative_lifted,"groupByColor_lifted, negative_lifted, tail"
+145,5ffb2104.json,"(np.float64(9.0), np.float64(27.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+146,604001fa.json,"(np.float64(3.0), np.float64(96.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+147,60a26a3e.json,"(np.float64(1.0), np.float64(168.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+148,60c09cac.json,"(np.float64(4.0), np.float64(28.0), np.float64(4.0), np.float64(6.0))",splitH_lifted >> intersect >> negative_lifted,"intersect, negative_lifted, splitH_lifted"
+149,626c0bcc.json,"(np.float64(5.0), np.float64(49.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+150,62ab2642.json,"(np.float64(2.0), np.float64(91.0), np.float64(0.0), np.float64(5.0))",splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+151,62b74c02.json,"(np.float64(4.0), np.float64(42.0), np.float64(10.0), np.float64(0.0))",cropToContent_lifted >> negative_lifted,"cropToContent_lifted, negative_lifted"
+152,639f5a19.json,"(np.float64(6.0), np.float64(529.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+153,642248e4.json,"(np.float64(2.0), np.float64(114.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+154,642d658d.json,"(np.float64(1.0), np.float64(431.0), np.float64(21.0), np.float64(19.0))",groupByColor_lifted >> negative_lifted >> reverse,"groupByColor_lifted, negative_lifted, reverse"
+155,64a7c07e.json,"(np.float64(0.0), np.float64(112.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+156,66e6c45b.json,"(np.float64(7.0), np.float64(12.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+157,66f2d22f.json,"(np.float64(4.0), np.float64(48.0), np.float64(7.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+158,67636eac.json,"(np.float64(2.0), np.float64(50.0), np.float64(7.0), np.float64(0.0))",splitH_lifted >> intersect >> negative_lifted,"intersect, negative_lifted, splitH_lifted"
+159,67b4a34d.json,"(np.float64(4.0), np.float64(240.0), np.float64(12.0), np.float64(12.0))",negative_lifted >> negative_lifted,negative_lifted
+160,67c52801.json,"(np.float64(3.0), np.float64(96.0), np.float64(0.0), np.float64(1.0))",groupByColor_lifted >> negative_lifted >> cropToContent_lifted,"cropToContent_lifted, groupByColor_lifted, negative_lifted"
+161,68b67ca3.json,"(np.float64(2.0), np.float64(16.0), np.float64(3.0), np.float64(0.0))",negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+162,692cd3b6.json,"(np.float64(1.0), np.float64(129.0), np.float64(12.0), np.float64(13.0))",splitH_lifted >> splitH_lifted >> cropToContent_lifted,"cropToContent_lifted, splitH_lifted"
+163,695367ec.json,"(np.float64(3.0), np.float64(97.0), np.float64(11.0), np.float64(11.0))",negative_lifted >> negative_lifted,negative_lifted
+164,696d4842.json,"(np.float64(5.0), np.float64(391.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+165,69889d6e.json,"(np.float64(1.0), np.float64(84.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+166,6a11f6da.json,"(np.float64(2.0), np.float64(67.0), np.float64(0.0), np.float64(10.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+167,6ad5bdfd.json,"(np.float64(5.0), np.float64(43.0), np.float64(1.0), np.float64(0.0))",cropToContent_lifted >> groupByColor_lifted >> negative_lifted,"cropToContent_lifted, groupByColor_lifted, negative_lifted"
+168,6df30ad6.json,"(np.float64(2.0), np.float64(100.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> tail,"groupByColor_lifted, negative_lifted, tail"
+169,6ea4a07e.json,"(np.float64(2.0), np.float64(9.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted,groupByColor_lifted
+170,6f473927.json,"(np.float64(3.0), np.float64(10.0), np.float64(3.0), np.float64(2.0))",splitH_lifted >> intersect >> negative_lifted,"intersect, negative_lifted, splitH_lifted"
+171,7039b2d7.json,"(np.float64(1.0), np.float64(94.0), np.float64(7.0), np.float64(8.0))",union,union
+172,705a3229.json,"(np.float64(0.0), np.float64(81.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+173,712bf12e.json,"(np.float64(3.0), np.float64(152.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+174,72207abc.json,"(np.float64(1.0), np.float64(53.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+175,72a961c9.json,"(np.float64(2.0), np.float64(71.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+176,73182012.json,"(np.float64(0.0), np.float64(60.0), np.float64(8.0), np.float64(8.0))",union,union
+177,73c3b0d8.json,"(np.float64(3.0), np.float64(16.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+178,73ccf9c2.json,"(np.float64(0.0), np.float64(339.0), np.float64(13.0), np.float64(15.0))",negative_lifted,negative_lifted
+179,759f3fd3.json,"(np.float64(1.0), np.float64(63.0), np.float64(0.0), np.float64(8.0))",splitH_lifted >> splitH_lifted >> union,"splitH_lifted, union"
+180,762cd429.json,"(np.float64(0.0), np.float64(340.0), np.float64(28.0), np.float64(8.0))",splitH_lifted >> union >> cropToContent_lifted,"cropToContent_lifted, splitH_lifted, union"
+181,770cc55f.json,"(np.float64(4.0), np.float64(68.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+182,782b5218.json,"(np.float64(1.0), np.float64(82.0), np.float64(0.0), np.float64(5.0))",groupByColor_lifted >> splitH_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted, splitH_lifted"
+183,79369cc6.json,"(np.float64(3.0), np.float64(287.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+184,7953d61e.json,"(np.float64(5.0), np.float64(64.0), np.float64(4.0), np.float64(7.0))",negative_lifted >> splitH_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+185,79fb03f4.json,"(np.float64(1.0), np.float64(35.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+186,7bb29440.json,"(np.float64(1.0), np.float64(295.0), np.float64(10.0), np.float64(15.0))",groupByColor_lifted >> intersect >> negative_lifted,"groupByColor_lifted, intersect, negative_lifted"
+187,7c8af763.json,"(np.float64(4.0), np.float64(100.0), np.float64(0.0), np.float64(5.0))",groupByColor_lifted >> splitH_lifted >> intersect,"groupByColor_lifted, intersect, splitH_lifted"
+188,7c9b52a0.json,"(np.float64(1.0), np.float64(250.0), np.float64(11.0), np.float64(12.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+189,7d18a6fb.json,"(np.float64(3.0), np.float64(61.0), np.float64(9.0), np.float64(11.0))",cropToContent_lifted,cropToContent_lifted
+190,7d1f7ee8.json,"(np.float64(2.0), np.float64(216.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+191,7d419a02.json,"(np.float64(4.0), np.float64(352.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+192,7e02026e.json,"(np.float64(1.0), np.float64(118.0), np.float64(0.0), np.float64(6.0))",splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+193,7ee1c6ea.json,"(np.float64(4.0), np.float64(100.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+194,817e6c09.json,"(np.float64(1.0), np.float64(35.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+195,81c0276b.json,"(np.float64(1.0), np.float64(142.0), np.float64(14.0), np.float64(13.0))",intersect,intersect
+196,833dafe3.json,"(np.float64(4.0), np.float64(39.0), np.float64(4.0), np.float64(7.0))",splitH_lifted >> splitH_lifted >> intersect,"intersect, splitH_lifted"
+197,845d6e51.json,"(np.float64(4.0), np.float64(100.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+198,84db8fc4.json,"(np.float64(5.0), np.float64(100.0), np.float64(0.0), np.float64(5.0))",groupByColor_lifted >> splitH_lifted >> intersect,"groupByColor_lifted, intersect, splitH_lifted"
+199,84f2aca1.json,"(np.float64(6.0), np.float64(184.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+200,8597cfd7.json,"(np.float64(3.0), np.float64(10.0), np.float64(7.0), np.float64(0.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+201,85b81ff1.json,"(np.float64(0.0), np.float64(166.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+202,85fa5666.json,"(np.float64(6.0), np.float64(61.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+203,8719f442.json,"(np.float64(3.0), np.float64(42.0), np.float64(12.0), np.float64(14.0))",splitH_lifted >> intersect >> negative_lifted,"intersect, negative_lifted, splitH_lifted"
+204,88207623.json,"(np.float64(5.0), np.float64(233.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+205,891232d6.json,"(np.float64(7.0), np.float64(157.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+206,896d5239.json,"(np.float64(2.0), np.float64(235.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+207,8a371977.json,"(np.float64(3.0), np.float64(586.0), np.float64(0.0), np.float64(22.0))",splitH_lifted >> splitH_lifted >> splitH_lifted,splitH_lifted
+208,8b28cd80.json,"(np.float64(3.0), np.float64(44.0), np.float64(6.0), np.float64(8.0))",splitH_lifted >> negative_lifted >> sortByColor,"negative_lifted, sortByColor, splitH_lifted"
+209,8ba14f53.json,"(np.float64(4.0), np.float64(31.0), np.float64(6.0), np.float64(1.0))",groupByColor_lifted >> intersect >> negative_lifted,"groupByColor_lifted, intersect, negative_lifted"
+210,8cb8642d.json,"(np.float64(3.0), np.float64(250.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+211,8dae5dfc.json,"(np.float64(4.0), np.float64(323.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+212,8e2edd66.json,"(np.float64(3.0), np.float64(12.0), np.float64(6.0), np.float64(8.0))",splitH_lifted >> intersect >> negative_lifted,"intersect, negative_lifted, splitH_lifted"
+213,8ee62060.json,"(np.float64(2.0), np.float64(85.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> intersect >> negative_lifted,"groupByColor_lifted, intersect, negative_lifted"
+214,8fbca751.json,"(np.float64(1.0), np.float64(41.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+215,90347967.json,"(np.float64(5.0), np.float64(75.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+216,903d1b4a.json,"(np.float64(7.0), np.float64(256.0), np.float64(0.0), np.float64(12.0))",negative_lifted >> splitH_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+217,9110e3c5.json,"(np.float64(6.0), np.float64(17.0), np.float64(4.0), np.float64(0.0))",splitH_lifted >> union,"splitH_lifted, union"
+218,917bccba.json,"(np.float64(1.0), np.float64(130.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+219,929ab4e9.json,"(np.float64(9.0), np.float64(576.0), np.float64(0.0), np.float64(18.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+220,92e50de0.json,"(np.float64(3.0), np.float64(579.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+221,9356391f.json,"(np.float64(6.0), np.float64(179.0), np.float64(0.0), np.float64(8.0))",negative_lifted >> splitH_lifted >> intersect,"intersect, negative_lifted, splitH_lifted"
+222,93b4f4b3.json,"(np.float64(4.0), np.float64(136.0), np.float64(6.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> reverse,"groupByColor_lifted, negative_lifted, reverse"
+223,93c31fbe.json,"(np.float64(1.0), np.float64(401.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+224,94133066.json,"(np.float64(5.0), np.float64(238.0), np.float64(15.0), np.float64(1.0))",splitH_lifted >> union >> negative_lifted,"negative_lifted, splitH_lifted, union"
+225,94414823.json,"(np.float64(4.0), np.float64(84.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+226,94be5b80.json,"(np.float64(3.0), np.float64(220.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+227,95a58926.json,"(np.float64(1.0), np.float64(488.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> reverse,"groupByColor_lifted, negative_lifted, reverse"
+228,963f59bc.json,"(np.float64(2.0), np.float64(172.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+229,96a8c0cd.json,"(np.float64(2.0), np.float64(219.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+230,97239e3d.json,"(np.float64(4.0), np.float64(241.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+231,9772c176.json,"(np.float64(1.0), np.float64(423.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+232,981571dc.json,"(np.float64(9.0), np.float64(894.0), np.float64(0.0), np.float64(23.0))",splitH_lifted >> groupByColor_lifted >> splitH_lifted,"groupByColor_lifted, splitH_lifted"
+233,992798f6.json,"(np.float64(2.0), np.float64(245.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+234,99306f82.json,"(np.float64(4.0), np.float64(159.0), np.float64(0.0), np.float64(8.0))",negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+235,9a4bb226.json,"(np.float64(2.0), np.float64(216.0), np.float64(12.0), np.float64(12.0))",groupByColor_lifted >> intersect >> negative_lifted,"groupByColor_lifted, intersect, negative_lifted"
+236,9b2a60aa.json,"(np.float64(4.0), np.float64(301.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+237,9b365c51.json,"(np.float64(5.0), np.float64(126.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> reverse >> negative_lifted,"groupByColor_lifted, negative_lifted, reverse"
+238,9b4c17c4.json,"(np.float64(4.0), np.float64(132.0), np.float64(0.0), np.float64(9.0))",groupByColor_lifted >> splitH_lifted >> splitH_lifted,"groupByColor_lifted, splitH_lifted"
+239,9bebae7a.json,"(np.float64(0.0), np.float64(132.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+240,9c1e755f.json,"(np.float64(3.0), np.float64(73.0), np.float64(0.0), np.float64(8.0))",splitH_lifted >> splitH_lifted >> reverse,"reverse, splitH_lifted"
+241,9c56f360.json,"(np.float64(1.0), np.float64(63.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> reverse,"groupByColor_lifted, negative_lifted, reverse"
+242,9caba7c3.json,"(np.float64(5.0), np.float64(361.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+243,9ddd00f0.json,"(np.float64(3.0), np.float64(13.0), np.float64(0.0), np.float64(4.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+244,9def23fe.json,"(np.float64(3.0), np.float64(239.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+245,9f27f097.json,"(np.float64(4.0), np.float64(144.0), np.float64(0.0), np.float64(9.0))",negative_lifted >> splitH_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+246,a04b2602.json,"(np.float64(2.0), np.float64(162.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+247,a096bf4d.json,"(np.float64(5.0), np.float64(256.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+248,a3f84088.json,"(np.float64(1.0), np.float64(258.0), np.float64(2.0), np.float64(16.0))",splitH_lifted >> splitH_lifted >> cropToContent_lifted,"cropToContent_lifted, splitH_lifted"
+249,a406ac07.json,"(np.float64(5.0), np.float64(80.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+250,a57f2f04.json,"(np.float64(2.0), np.float64(441.0), np.float64(0.0), np.float64(18.0))",splitH_lifted >> negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+251,a59b95c0.json,"(np.float64(4.0), np.float64(81.0), np.float64(6.0), np.float64(8.0))",negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+252,a680ac02.json,"(np.float64(2.0), np.float64(480.0), np.float64(10.0), np.float64(20.0))",groupByColor_lifted >> tail >> negative_lifted,"groupByColor_lifted, negative_lifted, tail"
+253,a8610ef7.json,"(np.float64(3.0), np.float64(36.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+254,a934301b.json,"(np.float64(2.0), np.float64(159.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+255,aa18de87.json,"(np.float64(1.0), np.float64(31.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+256,aa300dc3.json,"(np.float64(1.0), np.float64(94.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+257,aa4ec2a5.json,"(np.float64(6.0), np.float64(300.0), np.float64(0.0), np.float64(15.0))",splitH_lifted >> negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+258,aab50785.json,"(np.float64(5.0), np.float64(150.0), np.float64(12.0), np.float64(7.0))",groupByColor_lifted >> cropToContent_lifted >> negative_lifted,"cropToContent_lifted, groupByColor_lifted, negative_lifted"
+259,ac0c5833.json,"(np.float64(3.0), np.float64(607.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+260,ac2e8ecf.json,"(np.float64(5.0), np.float64(217.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+261,ac3e2b04.json,"(np.float64(2.0), np.float64(186.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+262,ac605cbb.json,"(np.float64(1.0), np.float64(75.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+263,ad7e01d0.json,"(np.float64(3.0), np.float64(192.0), np.float64(12.0), np.float64(15.0))",groupByColor_lifted >> splitH_lifted >> splitH_lifted,"groupByColor_lifted, splitH_lifted"
+264,ae58858e.json,"(np.float64(1.0), np.float64(90.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+265,aee291af.json,"(np.float64(1.0), np.float64(299.0), np.float64(13.0), np.float64(13.0))",intersect,intersect
+266,af22c60d.json,"(np.float64(6.0), np.float64(900.0), np.float64(0.0), np.float64(23.0))",splitH_lifted >> negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+267,af24b4cc.json,"(np.float64(4.0), np.float64(45.0), np.float64(3.0), np.float64(3.0))",cropToContent_lifted >> groupByColor_lifted >> negative_lifted,"cropToContent_lifted, groupByColor_lifted, negative_lifted"
+268,b0722778.json,"(np.float64(8.0), np.float64(60.0), np.float64(7.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+269,b0f4d537.json,"(np.float64(5.0), np.float64(72.0), np.float64(6.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+270,b15fca0b.json,"(np.float64(2.0), np.float64(75.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+271,b1fc8b8e.json,"(np.float64(0.0), np.float64(20.0), np.float64(1.0), np.float64(1.0))",negative_lifted,negative_lifted
+272,b20f7c8b.json,"(np.float64(5.0), np.float64(396.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+273,b457fec5.json,"(np.float64(4.0), np.float64(252.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+274,b4a43f3b.json,"(np.float64(3.0), np.float64(104.0), np.float64(12.0), np.float64(5.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+275,b7999b51.json,"(np.float64(0.0), np.float64(41.0), np.float64(12.0), np.float64(6.0))",init,init
+276,b7cb93ac.json,"(np.float64(1.0), np.float64(18.0), np.float64(7.0), np.float64(7.0))",init,init
+277,b7f8a4d8.json,"(np.float64(2.0), np.float64(724.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+278,b7fb29bc.json,"(np.float64(2.0), np.float64(177.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+279,b942fd60.json,"(np.float64(4.0), np.float64(25.0), np.float64(0.0), np.float64(6.0))",splitH_lifted >> splitH_lifted >> intersect,"intersect, splitH_lifted"
+280,b9630600.json,"(np.float64(0.0), np.float64(856.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+281,ba9d41b8.json,"(np.float64(4.0), np.float64(236.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+282,baf41dbf.json,"(np.float64(3.0), np.float64(177.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+283,bb52a14b.json,"(np.float64(2.0), np.float64(472.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+284,bbb1b8b6.json,"(np.float64(2.0), np.float64(30.0), np.float64(5.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+285,bc4146bd.json,"(np.float64(4.0), np.float64(80.0), np.float64(16.0), np.float64(3.0))",splitH_lifted >> negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+286,bcb3040b.json,"(np.float64(2.0), np.float64(97.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+287,bd14c3bf.json,"(np.float64(1.0), np.float64(324.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+288,be03b35f.json,"(np.float64(0.0), np.float64(19.0), np.float64(3.0), np.float64(3.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+289,bf32578f.json,"(np.float64(3.0), np.float64(22.0), np.float64(0.0), np.float64(3.0))",splitH_lifted >> intersect >> negative_lifted,"intersect, negative_lifted, splitH_lifted"
+290,bf699163.json,"(np.float64(3.0), np.float64(297.0), np.float64(15.0), np.float64(14.0))",negative_lifted >> negative_lifted >> sortByWeight,"negative_lifted, sortByWeight"
+291,bf89d739.json,"(np.float64(1.0), np.float64(190.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+292,c074846d.json,"(np.float64(4.0), np.float64(47.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+293,c1990cce.json,"(np.float64(2.0), np.float64(14.0), np.float64(6.0), np.float64(6.0))",cropToContent_lifted,cropToContent_lifted
+294,c3202e5a.json,"(np.float64(2.0), np.float64(523.0), np.float64(20.0), np.float64(20.0))",groupByColor_lifted >> sortByWeight >> negative_lifted,"groupByColor_lifted, negative_lifted, sortByWeight"
+295,c35c1b4c.json,"(np.float64(2.0), np.float64(97.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+296,c48954c1.json,"(np.float64(5.0), np.float64(81.0), np.float64(6.0), np.float64(8.0))",splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+297,c62e2108.json,"(np.float64(2.0), np.float64(416.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+298,c64f1187.json,"(np.float64(4.0), np.float64(156.0), np.float64(0.0), np.float64(6.0))",cropToContent_lifted >> groupByColor_lifted >> negative_lifted,"cropToContent_lifted, groupByColor_lifted, negative_lifted"
+299,c658a4bd.json,"(np.float64(1.0), np.float64(97.0), np.float64(7.0), np.float64(7.0))",sortByWeight,sortByWeight
+300,c663677b.json,"(np.float64(5.0), np.float64(729.0), np.float64(0.0), np.float64(21.0))",negative_lifted >> splitH_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+301,c6e1b8da.json,"(np.float64(2.0), np.float64(376.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> tail,"groupByColor_lifted, negative_lifted, tail"
+302,c7d4e6ad.json,"(np.float64(4.0), np.float64(100.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+303,c87289bb.json,"(np.float64(1.0), np.float64(86.0), np.float64(0.0), np.float64(6.0))",splitH_lifted >> cropToContent_lifted >> negative_lifted,"cropToContent_lifted, negative_lifted, splitH_lifted"
+304,c8b7cc0f.json,"(np.float64(0.0), np.float64(70.0), np.float64(6.0), np.float64(6.0))",groupByColor_lifted >> reverse >> negative_lifted,"groupByColor_lifted, negative_lifted, reverse"
+305,c92b942c.json,"(np.float64(2.0), np.float64(75.0), np.float64(10.0), np.float64(10.0))",negative_lifted,negative_lifted
+306,c97c0139.json,"(np.float64(1.0), np.float64(359.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+307,ca8de6ea.json,"(np.float64(5.0), np.float64(17.0), np.float64(2.0), np.float64(2.0))",groupByColor_lifted >> sortByWeight >> negative_lifted,"groupByColor_lifted, negative_lifted, sortByWeight"
+308,ca8f78db.json,"(np.float64(8.0), np.float64(900.0), np.float64(0.0), np.float64(15.0))",groupByColor_lifted >> intersect >> splitH_lifted,"groupByColor_lifted, intersect, splitH_lifted"
+309,cad67732.json,"(np.float64(2.0), np.float64(80.0), np.float64(8.0), np.float64(8.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+310,cb227835.json,"(np.float64(1.0), np.float64(136.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+311,ccd554ac.json,"(np.float64(0.0), np.float64(136.0), np.float64(12.0), np.float64(12.0))",negative_lifted,negative_lifted
+312,cd3c21df.json,"(np.float64(1.0), np.float64(163.0), np.float64(10.0), np.float64(11.0))",groupByColor_lifted >> intersect >> negative_lifted,"groupByColor_lifted, intersect, negative_lifted"
+313,ce039d91.json,"(np.float64(1.0), np.float64(100.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+314,ce8d95cc.json,"(np.float64(5.0), np.float64(109.0), np.float64(6.0), np.float64(5.0))",groupByColor_lifted >> intersect >> negative_lifted,"groupByColor_lifted, intersect, negative_lifted"
+315,cf133acc.json,"(np.float64(6.0), np.float64(197.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+316,cfb2ce5a.json,"(np.float64(6.0), np.float64(72.0), np.float64(0.0), np.float64(8.0))",splitH_lifted >> negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+317,d017b73f.json,"(np.float64(1.0), np.float64(26.0), np.float64(3.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+318,d19f7514.json,"(np.float64(2.0), np.float64(40.0), np.float64(0.0), np.float64(6.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+319,d282b262.json,"(np.float64(9.0), np.float64(195.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> intersect >> negative_lifted,"groupByColor_lifted, intersect, negative_lifted"
+320,d2acf2cb.json,"(np.float64(5.0), np.float64(49.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+321,d304284e.json,"(np.float64(1.0), np.float64(543.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+322,d37a1ef5.json,"(np.float64(3.0), np.float64(108.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+323,d47aa2ff.json,"(np.float64(8.0), np.float64(200.0), np.float64(11.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+324,d492a647.json,"(np.float64(1.0), np.float64(143.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+325,d4b1c2b1.json,"(np.float64(3.0), np.float64(36.0), np.float64(3.0), np.float64(5.0))",splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+326,d4c90558.json,"(np.float64(3.0), np.float64(169.0), np.float64(14.0), np.float64(6.0))",negative_lifted >> splitH_lifted >> union,"negative_lifted, splitH_lifted, union"
+327,d56f2372.json,"(np.float64(2.0), np.float64(267.0), np.float64(10.0), np.float64(16.0))",cropToContent_lifted >> groupByColor_lifted >> negative_lifted,"cropToContent_lifted, groupByColor_lifted, negative_lifted"
+328,d5c634a2.json,"(np.float64(3.0), np.float64(31.0), np.float64(1.0), np.float64(5.0))",negative_lifted,negative_lifted
+329,d931c21c.json,"(np.float64(2.0), np.float64(346.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+330,d94c3b52.json,"(np.float64(2.0), np.float64(425.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+331,da2b0fe3.json,"(np.float64(1.0), np.float64(90.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+332,da515329.json,"(np.float64(0.0), np.float64(128.0), np.float64(11.0), np.float64(15.0))",splitH_lifted >> cropToContent_lifted >> splitH_lifted,"cropToContent_lifted, splitH_lifted"
+333,dc2aa30b.json,"(np.float64(1.0), np.float64(121.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+334,dc2e9a9d.json,"(np.float64(2.0), np.float64(423.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+335,dd2401ed.json,"(np.float64(2.0), np.float64(96.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> tail >> negative_lifted,"groupByColor_lifted, negative_lifted, tail"
+336,de493100.json,"(np.float64(6.0), np.float64(884.0), np.float64(26.0), np.float64(26.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+337,df8cc377.json,"(np.float64(3.0), np.float64(234.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+338,e0fb7511.json,"(np.float64(1.0), np.float64(155.0), np.float64(0.0), np.float64(10.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+339,e133d23d.json,"(np.float64(5.0), np.float64(17.0), np.float64(4.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+340,e1baa8a4.json,"(np.float64(8.0), np.float64(213.0), np.float64(11.0), np.float64(12.0))",negative_lifted >> negative_lifted,negative_lifted
+341,e1d2900e.json,"(np.float64(1.0), np.float64(127.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> tail,"groupByColor_lifted, negative_lifted, tail"
+342,e2092e0c.json,"(np.float64(8.0), np.float64(211.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+343,e21a174a.json,"(np.float64(2.0), np.float64(41.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+344,e345f17b.json,"(np.float64(5.0), np.float64(29.0), np.float64(4.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+345,e4075551.json,"(np.float64(5.0), np.float64(173.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+346,e41c6fd3.json,"(np.float64(4.0), np.float64(432.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> reverse >> negative_lifted,"groupByColor_lifted, negative_lifted, reverse"
+347,e57337a4.json,"(np.float64(0.0), np.float64(216.0), np.float64(12.0), np.float64(12.0))",groupByColor_lifted,groupByColor_lifted
+348,e5790162.json,"(np.float64(8.0), np.float64(59.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+349,e5c44e8f.json,"(np.float64(3.0), np.float64(100.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+350,e619ca6e.json,"(np.float64(0.0), np.float64(687.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+351,e633a9e5.json,"(np.float64(7.0), np.float64(25.0), np.float64(2.0), np.float64(4.0))",groupByColor_lifted >> splitH_lifted,"groupByColor_lifted, splitH_lifted"
+352,e66aafb8.json,"(np.float64(6.0), np.float64(534.0), np.float64(17.0), np.float64(18.0))",groupByColor_lifted >> intersect >> negative_lifted,"groupByColor_lifted, intersect, negative_lifted"
+353,e681b708.json,"(np.float64(3.0), np.float64(440.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+354,e69241bd.json,"(np.float64(3.0), np.float64(41.0), np.float64(0.0), np.float64(6.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+355,e6de6e8f.json,"(np.float64(1.0), np.float64(22.0), np.float64(5.0), np.float64(6.0))",negative_lifted,negative_lifted
+356,e74e1818.json,"(np.float64(8.0), np.float64(34.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+357,e760a62e.json,"(np.float64(4.0), np.float64(505.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+358,e7639916.json,"(np.float64(1.0), np.float64(114.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+359,e78887d1.json,"(np.float64(5.0), np.float64(114.0), np.float64(0.0), np.float64(6.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+360,e7a25a18.json,"(np.float64(1.0), np.float64(48.0), np.float64(8.0), np.float64(8.0))",tail,tail
+361,e7b06bea.json,"(np.float64(9.0), np.float64(69.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+362,e7dd8335.json,"(np.float64(1.0), np.float64(81.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+363,e872b94a.json,"(np.float64(1.0), np.float64(70.0), np.float64(11.0), np.float64(4.0))",negative_lifted,negative_lifted
+364,e88171ec.json,"(np.float64(1.0), np.float64(248.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+365,e95e3d8e.json,"(np.float64(8.0), np.float64(484.0), np.float64(0.0), np.float64(11.0))",groupByColor_lifted >> intersect >> splitH_lifted,"groupByColor_lifted, intersect, splitH_lifted"
+366,e99362f0.json,"(np.float64(4.0), np.float64(89.0), np.float64(5.0), np.float64(6.0))",groupByColor_lifted >> sortByWeight >> negative_lifted,"groupByColor_lifted, negative_lifted, sortByWeight"
+367,e9ac8c9e.json,"(np.float64(5.0), np.float64(100.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted,"groupByColor_lifted, negative_lifted"
+368,e9b4f6fc.json,"(np.float64(2.0), np.float64(153.0), np.float64(9.0), np.float64(9.0))",groupByColor_lifted >> intersect >> negative_lifted,"groupByColor_lifted, intersect, negative_lifted"
+369,e9bb6954.json,"(np.float64(8.0), np.float64(255.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+370,e9c9d9a1.json,"(np.float64(5.0), np.float64(212.0), np.float64(0.0), np.float64(14.0))",splitH_lifted >> splitH_lifted >> negative_lifted,"negative_lifted, splitH_lifted"
+371,ea959feb.json,"(np.float64(9.0), np.float64(550.0), np.float64(0.0), np.float64(17.0))",negative_lifted >> splitH_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+372,ea9794b1.json,"(np.float64(0.0), np.float64(54.0), np.float64(5.0), np.float64(5.0))",init,init
+373,ecaa0ec1.json,"(np.float64(8.0), np.float64(111.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+374,ed74f2f2.json,"(np.float64(2.0), np.float64(36.0), np.float64(6.0), np.float64(2.0))",negative_lifted,negative_lifted
+375,ed98d772.json,"(np.float64(0.0), np.float64(21.0), np.float64(3.0), np.float64(3.0))",negative_lifted,negative_lifted
+376,ef26cbf6.json,"(np.float64(5.0), np.float64(77.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+377,f0afb749.json,"(np.float64(1.0), np.float64(38.0), np.float64(6.0), np.float64(6.0))",negative_lifted,negative_lifted
+378,f0df5ff0.json,"(np.float64(6.0), np.float64(188.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+379,f21745ec.json,"(np.float64(2.0), np.float64(430.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+380,f3b10344.json,"(np.float64(4.0), np.float64(694.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+381,f3cdc58f.json,"(np.float64(5.0), np.float64(87.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+382,f3e62deb.json,"(np.float64(0.0), np.float64(84.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+383,f4081712.json,"(np.float64(7.0), np.float64(551.0), np.float64(19.0), np.float64(19.0))",negative_lifted >> negative_lifted,negative_lifted
+384,f45f5ca7.json,"(np.float64(9.0), np.float64(92.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+385,f5aa3634.json,"(np.float64(2.0), np.float64(213.0), np.float64(11.0), np.float64(12.0))",groupByColor_lifted >> reverse >> negative_lifted,"groupByColor_lifted, negative_lifted, reverse"
+386,f5c89df1.json,"(np.float64(5.0), np.float64(155.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> union,"groupByColor_lifted, negative_lifted, union"
+387,f823c43c.json,"(np.float64(3.0), np.float64(144.0), np.float64(0.0), np.float64(9.0))",splitH_lifted >> negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+388,f83cb3f6.json,"(np.float64(1.0), np.float64(144.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> tail,"groupByColor_lifted, negative_lifted, tail"
+389,f8be4b64.json,"(np.float64(3.0), np.float64(150.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+390,f9a67cb5.json,"(np.float64(3.0), np.float64(104.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+391,f9d67f8b.json,"(np.float64(9.0), np.float64(900.0), np.float64(0.0), np.float64(23.0))",negative_lifted >> splitH_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+392,fafd9572.json,"(np.float64(4.0), np.float64(120.0), np.float64(0.0), np.float64(0.0))",groupByColor_lifted >> negative_lifted >> intersect,"groupByColor_lifted, intersect, negative_lifted"
+393,fb791726.json,"(np.float64(1.0), np.float64(65.0), np.float64(7.0), np.float64(7.0))",negative_lifted,negative_lifted
+394,fc754716.json,"(np.float64(1.0), np.float64(16.0), np.float64(0.0), np.float64(4.0))",splitH_lifted >> splitH_lifted,splitH_lifted
+395,fd096ab6.json,"(np.float64(7.0), np.float64(576.0), np.float64(0.0), np.float64(18.0))",negative_lifted >> splitH_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"
+396,fd4b2b02.json,"(np.float64(1.0), np.float64(581.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+397,fe9372f3.json,"(np.float64(3.0), np.float64(83.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+398,fea12743.json,"(np.float64(2.0), np.float64(176.0), np.float64(0.0), np.float64(0.0))",negative_lifted,negative_lifted
+399,ff72ca3e.json,"(np.float64(2.0), np.float64(71.0), np.float64(0.0), np.float64(7.0))",splitH_lifted >> negative_lifted >> splitH_lifted,"negative_lifted, splitH_lifted"

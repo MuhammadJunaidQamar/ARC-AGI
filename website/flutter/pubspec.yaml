@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   url_launcher: ^6.3.1
   firebase_core: ^3.14.0
+  universal_html: ^2.2.4
 
 dev_dependencies:
   flutter_test:
@@ -65,6 +66,14 @@ flutter:
     - assets/images/arc-example-task-fig1.png
     - assets/images/arc-agi-reasoning.png
     - assets/gif/Arc-solve.gif
+    - assets/images/Picture1.png
+    - assets/images/image2.png
+    - assets/images/image3.png
+    - assets/images/image4.png
+    - assets/images/image5.png
+    - assets/pdf/research_paper.pdf
+    - assets/images/logo.png
+  # - images/a_dot_burr.jpeg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
