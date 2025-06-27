@@ -64,7 +64,6 @@ flutter:
   assets:
     - assets/images/arc-example.jpg
     - assets/images/arc-example-task-fig1.png
-    - assets/images/arc-agi-reasoning.png
     - assets/gif/Arc-solve.gif
     - assets/images/Picture1.png
     - assets/images/image2.png

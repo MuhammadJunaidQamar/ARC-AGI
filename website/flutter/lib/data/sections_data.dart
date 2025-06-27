@@ -639,7 +639,6 @@ The architecture follows a layered design model comprising of data ingestion, pr
         TextSegment(
           'Our work contributes one such idea: a clean DSL and GA framework that could be extended with neural guidance.',
         ),
-        ImageSegment('assets/images/arc-agi-reasoning.png'),
       ]),
     ],
   ),
