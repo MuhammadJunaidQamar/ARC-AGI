@@ -12,8 +12,8 @@ from model_tools import load_peft_state, merge_peft_into_base
 from arc_downloader import download_arc_data
 
 # input paths
-base_model = 'chuanli11/Llama-3.2-3B-Instruct-uncensored'  # auto-downloaded from huggingface.co
-re_arc_path = os.path.join('input', 're_arc')  # https://github.com/michaelhodel/re-arc
+base_model = 'chuanli11/Llama-3.2-3B-Instruct-uncensored'
+re_arc_path = os.path.join('input', 're_arc') 
 download_arc_data(arc_data_path)
 
 # output paths
