@@ -123,7 +123,7 @@ Answering this question has significant implications for how we interpret the ca
           'https://arize.com/blog/ai-benchmark-deep-dive-gemini-humanitys-last-exam/#:~:text=solving%20based%20on%20visual%20cues,intriguing%20debate%20about%20which%20types',
         ),
         TextSegment(
-          'For example, ARC Prize blog results report Claude 3.5 (Sonnet) solved ~40% of ARC-AGI-1 tasks and Gemini 2.5 ~33%, while GPT-4 variants were essentially at chance. The newly announced OpenAI o3 model made a dramatic leap to 75.7% on ARC-AGI (semi-private), but only with massive compute and likely heavy fine-tuning.',
+          'For example, ARC Prize blog results report Claude 3.5 (Sonnet) solved ~40% of ARC-AGI-1 tasks and Gemini 2.5 ~33%, while GPT-4 variants were essentially at chance. The newly announced OpenAI o3 model made a dramatic leap to 20% on ARC-AGI (semi-private), but only with massive compute and likely heavy fine-tuning.',
         ),
       ]),
       ParagraphContent([
@@ -570,74 +570,9 @@ The architecture follows a layered design model comprising of data ingestion, pr
       ]),
       HeadingContent('Comparative Performance'),
       ParagraphContent([
-        TextSegment('We compare our approach to published results:'),
-      ]),
-      ListContent([
-        [
-          BoldSegment('DSL+Evolution Baseline: '),
-          TextSegment(' Fischer et al., using a more complex GE setup, solved'),
-          BoldSegment(' 7.7% '),
-          TextSegment('of training tasks and only'),
-          BoldSegment(' 3% '),
-          TextSegment(
-            'of secret test tasks in the ARC competition. They also noted that random search solved ~6.2% of training tasks (and 0% of test tasks). Our approach, being similar in spirit, would be expected to have similar low overall accuracy if scaled to all tasks. This confirms that even a DSL+GA with many primitives struggles across the diverse ARC set',
-          ),
-        ],
-        [
-          BoldSegment('State-of-the-Art Symbolic AI: '),
-          TextSegment(
-            'Bober-Irizar & Banerjee’s DreamCoder adaptation solved only',
-          ),
-          BoldSegment(' 16.5% of “easy” '),
-          TextSegment(
-            'ARC tasks, and worse on harder tasks. The best hand-crafted solver (Icecuber) remains over 50% on easy tasks. Our DSL+GA, lacking the sophisticated learning and enumerative engines of DreamCoder, would not approach these figures. Still, our example solution confirms the DSL is on the right track for at least some tasks',
-          ),
-        ],
-        [
-          BoldSegment('LLM-Based Systems: '),
-          TextSegment(
-            ' Early tests with generic LLMs gave near-zero accuracy. The ARC Prize guide notes that vanilla GPT-4 (with prompts) achieved <5% accuracy,',
-          ),
-          LinkSegment('arcprize.org', 'https://arcprize.org/guide'),
-          TextSegment(
-            'and even fine-tuned models only ~10%. Xu et al. report GPT-4 solved',
-          ),
-          BoldSegment(' 13/50 '),
-          TextSegment(
-            'of sample tasks (26%). Recent benchmarking by Chollet’s team shows GPT-4 variants score essentially',
-          ),
-          BoldSegment(' 0% '),
-          TextSegment('on ARC-AGI-1. In contrast, OpenAI’s new'),
-          BoldSegment(' o3 '),
-          TextSegment('model (trained on ARC data) achieves'),
-          BoldSegment(' 75.7% '),
-          TextSegment(
-            'on the semi-private set, and 87.5% with extreme compute. Anthropic’s Claude 3.5 Sonnet scored ~40% and Google Gemini Flash ~33%. These arcprize results underscore that only massive, specialized models are reaching high scores.',
-          ),
-        ],
-        [
-          BoldSegment('Summary Comparison: '),
-          TextSegment(
-            'Figure 1 (imagined) would summarize these: traditional DSL/GA yields single-digit success on ARC, early LLMs near zero,',
-          ),
-          LinkSegment('arcprize.org', 'https://arcprize.org/guide'),
-          TextSegment(
-            ' while the new frontier model hits ~80%. Our approach so far is in the former category.',
-          ),
-          ImageSegment('assets/images/arc-example-task-fig1.png'),
-        ],
-      ]),
-      ParagraphContent([
+        ImageSegment('assets/images/image4.png', alignment: Alignment.center),
         TextSegment(
-          ' Thus, on publicly reported benchmarks, current purely symbolic methods are far behind leading AI. Our DSL+GA does not match the specialized LLM or hybrid techniques in absolute performance. However, it preserves transparency and uses no external training data. It aligns with the notion that ARC remains an open challenge: no approach dominates. In particular, Chollet’s analysis concludes “ARC-AGI-2 remains completely unsolved” and that',
-        ),
-        BoldSegment(' new ideas are needed. '),
-        LinkSegment(
-          'arcprize.org',
-          'https://arcprize.org/blog/which-ai-reasoning-model-is-best#:~:text=stack%20these%20methods%20but%20efficiency,as%20a%20consistent%20measuring%20stick',
-        ),
-        TextSegment(
-          'Our work contributes one such idea: a clean DSL and GA framework that could be extended with neural guidance.',
+          'This figure shows a comparative analysis chart that illustrates the performance of various AI models on the ARC (Abstraction and Reasoning Corpus) benchmark. Humans demonstrate a significantly higher accuracy, scoring above 85%, highlighting the complexity of ARC tasks and the gap in current AI capabilities. Among the models tested, o1 preview and Sonnet 3.5 perform similarly, achieving around 20%, while lighter models like o1 mini, GPT-4o, and Gemini 1.5 score below 15%. This visual comparison emphasizes that even the most advanced LLMs still struggle with symbolic reasoning, abstraction, and generalization when compared to human cognition—reinforcing the ARC challenge as a true test of AGI potential.',
         ),
       ]),
     ],
@@ -725,25 +660,13 @@ In summary, this experiment highlights the limitations of applying pixel-based C
   ),
 
   SectionInfo(
-    title: 'Comparative Analysis',
-    contentBlocks: [
-      ParagraphContent([
-        ImageSegment('assets/images/image4.png', alignment: Alignment.center),
-        TextSegment(
-          'This figure shows a comparative analysis chart that illustrates the performance of various AI models on the ARC (Abstraction and Reasoning Corpus) benchmark. Humans demonstrate a significantly higher accuracy, scoring above 85%, highlighting the complexity of ARC tasks and the gap in current AI capabilities. Among the models tested, o1 preview and Sonnet 3.5 perform similarly, achieving around 20%, while lighter models like o1 mini, GPT-4o, and Gemini 1.5 score below 15%. This visual comparison emphasizes that even the most advanced LLMs still struggle with symbolic reasoning, abstraction, and generalization when compared to human cognition—reinforcing the ARC challenge as a true test of AGI potential.',
-        ),
-      ]),
-    ],
-  ),
-
-  SectionInfo(
     title: 'Conclusion',
     contentBlocks: [
       ParagraphContent([
         TextSegment('We have presented a'),
         BoldSegment(' DSL-based program synthesis '),
         TextSegment(
-          'approach to ARC tasks, along with a simple GA to search for solutions. We detailed the DSL primitives, GA procedure, and code implementation. Through an example, we showed the method can discover correct programs for suitable tasks. We placed our results in the context of existing literature: prior DSL/GA systems solved only a few percent of tasks, while top LLM-based systems now achieve ~75%. This gap illustrates that ARC remains a formidable benchmark. Our work contributes to the symbolic end of the spectrum, offering an interpretable but limited solution method.',
+          'approach to ARC tasks, along with a simple GA to search for solutions. We detailed the DSL primitives, GA procedure, and code implementation. Through an example, we showed the method can discover correct programs for suitable tasks. We placed our results in the context of existing literature: prior DSL/GA systems solved only a few percent of tasks. This gap illustrates that ARC remains a formidable benchmark. Our work contributes to the symbolic end of the spectrum, offering an interpretable but limited solution method.',
         ),
       ]),
       ParagraphContent([
