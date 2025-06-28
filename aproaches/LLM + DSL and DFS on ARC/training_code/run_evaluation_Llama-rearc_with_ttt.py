@@ -16,8 +16,8 @@ from selection import EvalTool
 from arc_downloader import download_arc_data
 
 # input paths
-base_model = 'da-fr/Llama-3.2-3B-ARChitects-ReArc-bnb-4bit'  # auto-downloaded from huggingface.co
-arc_data_path = os.path.join('input', 'arc-prize-2024') 
+base_model = 'da-fr/Llama-3.2-3B-ARChitects-ReArc-bnb-4bit'  
+arc_data_path = os.path.join('input', 'arc-agi') 
 download_arc_data(arc_data_path)
 
 # output paths
